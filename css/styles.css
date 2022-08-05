@@ -11,10 +11,43 @@
 	--color-text-white: #ffffff;
 }
 
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--color-all);
 	background-color: var(--background-all);
+}
+
+.wrapper {
+	width: 1600px;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-contact {
+	display: block;
+}
+
+.menu {
+	width: 254px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .logo {
