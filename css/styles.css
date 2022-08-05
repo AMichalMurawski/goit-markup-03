@@ -1,0 +1,194 @@
+:root {
+	--background-all: #ffffff;
+	--background-dark: #2f303a;
+	--background-light: #f5f4fa;
+	--color-all: #212121;
+	--color-contact-transparent: rgba(255, 255, 255, 0.6);
+	--color-logo-web: #2196f3;
+	--color-select: #2196f3;
+	--color-text-black: #000000;
+	--color-text-grey: #757575;
+	--color-text-white: #ffffff;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: var(--color-all);
+	background-color: var(--background-all);
+}
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+}
+
+.logo-header {
+	color: var(--color-text-black);
+}
+
+.logo-footer {
+	color: var(--color-text-white);
+}
+
+.logo-color-web {
+	color: var(--color-logo-web);
+}
+
+.list-none {
+	list-style-type: none;
+}
+
+.menu-item {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+}
+
+.menu-item:visited {
+	color: inherit;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+	color: var(--color-select);
+}
+
+.contact-header {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	font-style: normal;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	color: var(--color-text-grey);
+}
+
+.contact-footer {
+	font-size: 14px;
+	line-height: 1.71;
+	font-style: normal;
+	text-decoration: none;
+	letter-spacing: 0.03em;
+	color: var(--color-contact-transparent);
+}
+
+.contact-street {
+	color: var(--color-text-white);
+}
+
+.contact-link:visited {
+	color: inherit;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+	color: var(--color-select);
+}
+
+.dark-background {
+	background-color: var(--background-dark);
+}
+
+.service-text {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--color-text-white);
+}
+
+.service-order {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: var(--color-text-white);
+	background-color: var(--color-select);
+}
+
+.information-list-header {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.information-list-paragraph {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--color-text-grey);
+}
+
+.working-header,
+.employee-header {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+
+.employee-list-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.1875;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+
+.employee-list-position {
+	font-size: 16px;
+	line-height: 1.1875;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: var(--color-text-grey);
+}
+
+.light-background {
+	background-color: var(--background-light);
+}
+
+.project-filter-button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+	background-color: var(--background-light);
+}
+
+.project-filter-button:visited {
+	color: inherit;
+	background-color: inherit;
+}
+
+.project-filter-button:hover,
+.project-filter-button:focus {
+	color: var(--color-text-white);
+	background-color: var(--color-select);
+}
+
+.projects-list-item-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.projects-list-item-type {
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.03em;
+	color: var(--color-text-grey);
+}
