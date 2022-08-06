@@ -33,6 +33,10 @@ body {
 }
 
 .container-header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 15px;
+	padding-right: 27px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -40,7 +44,9 @@ body {
 }
 
 .container-contact {
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	gap:50px;
 }
 
 .menu {
@@ -48,6 +54,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-left:92px;
+	margin-right:371px;
 }
 
 .logo {
