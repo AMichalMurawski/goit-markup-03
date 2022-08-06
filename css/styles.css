@@ -1,5 +1,6 @@
 :root {
 	--background-all: #ffffff;
+	--background-browser: #e5e5e5;
 	--background-dark: #2f303a;
 	--background-light: #f5f4fa;
 	--color-all: #212121;
@@ -9,6 +10,7 @@
 	--color-text-black: #000000;
 	--color-text-grey: #757575;
 	--color-text-white: #ffffff;
+	--color-border-header: #ececec;
 }
 
 * {
@@ -19,17 +21,22 @@
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--color-all);
-	background-color: var(--background-all);
+	background-color: var(--background-browser);
 }
 
 .wrapper {
 	width: 1600px;
+	margin: 0 auto;
+	background-color: var(--background-all);
 }
 
 .container {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0;
+}
+
+header {
+	border-bottom: 1px solid var(--color-border-header);
 }
 
 .container-header {
@@ -46,19 +53,24 @@ body {
 .container-header-contact {
 	display: flex;
 	justify-content: space-between;
-	gap:50px;
+	gap: 50px;
 }
 
-.container-footer{
+.container-footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
-.container-footer-contact{
-	display:flex;
+.container-footer-contact {
+	display: flex;
 	flex-direction: column;
-	height:81px;
+	height: 81px;
 	justify-content: space-between;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 
 .menu {
@@ -66,8 +78,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left:92px;
-	margin-right:371px;
+	margin-left: 92px;
+	margin-right: 371px;
 }
 
 .logo {
@@ -129,15 +141,15 @@ body {
 	line-height: 1.71;
 	font-style: normal;
 	letter-spacing: 0.03em;
+	color: var(--color-contact-transparent);
 }
 
-.contact-street {
+.contact-footer.contact-street {
 	color: var(--color-text-white);
 }
 
-.contact-link{
+.contact-link {
 	text-decoration: none;
-	color: var(--color-contact-transparent);
 }
 
 .contact-link:visited {
@@ -153,17 +165,24 @@ body {
 	background-color: var(--background-dark);
 }
 
+.container-service {
+	padding: 200px;
+	text-align: center;
+}
+
 .service-text {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	letter-spacing: 0.06em;
-	text-align: center;
 	text-transform: uppercase;
 	color: var(--color-text-white);
+	margin-bottom: 30px;
 }
 
 .service-order {
+	width: 200px;
+	height: 50px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
@@ -171,6 +190,19 @@ body {
 	letter-spacing: 0.06em;
 	color: var(--color-text-white);
 	background-color: var(--color-select);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.information-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 0 15px;
+}
+
+.information-list-item {
+	flex-basis: calc((100%-90px) / 5);
 }
 
 .information-list-header {
@@ -179,6 +211,7 @@ body {
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 .information-list-paragraph {
@@ -188,6 +221,10 @@ body {
 	color: var(--color-text-grey);
 }
 
+.working {
+	padding: 0 15px;
+}
+
 .working-header,
 .employee-header {
 	font-weight: 700;
@@ -195,6 +232,27 @@ body {
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 50px;
+}
+
+.working-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.working-list-item {
+	flex-basis: calc((100%-30px) / 4);
+}
+
+.employee-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.employee-list-item{
+	flex-basis: calc((100%-30px) / 5);
 }
 
 .employee-list-name {
