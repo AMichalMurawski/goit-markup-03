@@ -43,10 +43,22 @@ body {
 	align-items: center;
 }
 
-.container-contact {
+.container-header-contact {
 	display: flex;
 	justify-content: space-between;
 	gap:50px;
+}
+
+.container-footer{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.container-footer-contact{
+	display:flex;
+	flex-direction: column;
+	height:81px;
+	justify-content: space-between;
 }
 
 .menu {
@@ -73,6 +85,8 @@ body {
 
 .logo-footer {
 	color: var(--color-text-white);
+	display: block;
+	margin-bottom: 20px;
 }
 
 .logo-color-web {
@@ -114,13 +128,16 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	font-style: normal;
-	text-decoration: none;
 	letter-spacing: 0.03em;
-	color: var(--color-contact-transparent);
 }
 
 .contact-street {
 	color: var(--color-text-white);
+}
+
+.contact-link{
+	text-decoration: none;
+	color: var(--color-contact-transparent);
 }
 
 .contact-link:visited {
