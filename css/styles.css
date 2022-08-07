@@ -14,8 +14,9 @@
 }
 
 * {
-	padding: 0;
-	margin: 0;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding:0;
 }
 
 body {
@@ -66,6 +67,7 @@ header {
 	flex-direction: column;
 	height: 81px;
 	justify-content: space-between;
+	margin:0;
 }
 
 .section {
@@ -136,6 +138,10 @@ header {
 	color: var(--color-text-grey);
 }
 
+.container-footer-contact span{
+	margin:0;
+}
+
 .contact-footer {
 	font-size: 14px;
 	line-height: 1.71;
@@ -165,7 +171,7 @@ header {
 	background-color: var(--background-dark);
 }
 
-.container-service {
+.service {
 	padding: 200px;
 	text-align: center;
 }
@@ -239,20 +245,26 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	padding: 0;
 }
 
 .working-list-item {
-	flex-basis: calc((100%-30px) / 4);
+	flex-basis: calc((100%-60px) / 4);
 }
 
-.employee-list{
+.employee {
+	padding: 0 15px;
+}
+
+.employee-list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	padding: 0;
 }
 
-.employee-list-item{
-	flex-basis: calc((100%-30px) / 5);
+.employee-list-item {
+	flex-basis: calc((100%-90px) / 5);
 }
 
 .employee-list-name {
