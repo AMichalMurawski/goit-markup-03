@@ -11,12 +11,12 @@
 	--color-text-grey: #757575;
 	--color-text-white: #ffffff;
 	--color-border-header: #ececec;
+	--color-border-projects: #eeeeee;
 }
 
 * {
-	box-sizing: border-box;
 	margin: 0 auto;
-	padding:0;
+	padding: 0;
 }
 
 body {
@@ -67,7 +67,6 @@ header {
 	flex-direction: column;
 	height: 81px;
 	justify-content: space-between;
-	margin:0;
 }
 
 .section {
@@ -138,8 +137,8 @@ header {
 	color: var(--color-text-grey);
 }
 
-.container-footer-contact span{
-	margin:0;
+.container-footer-contact span {
+	margin: 0;
 }
 
 .contact-footer {
@@ -265,6 +264,11 @@ header {
 
 .employee-list-item {
 	flex-basis: calc((100%-90px) / 5);
+	background: #ffffff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	padding-bottom: 30px;
 }
 
 .employee-list-name {
@@ -273,6 +277,8 @@ header {
 	line-height: 1.1875;
 	letter-spacing: 0.03em;
 	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
 }
 
 .employee-list-position {
@@ -287,24 +293,56 @@ header {
 	background-color: var(--background-light);
 }
 
-.project-filter-button {
+.projects {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.projects-filter-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 0 288px 0 280px;
+	margin-bottom: 50px;
+}
+
+.projects-filter-list-item {
+	flex-basis: calc((100%-32px) / 6);
+}
+
+.projects-filter-button {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
 	background-color: var(--background-light);
+	padding: 6px 22px;
 }
 
-.project-filter-button:visited {
+.projects-filter-button:visited {
 	color: inherit;
 	background-color: inherit;
 }
 
-.project-filter-button:hover,
-.project-filter-button:focus {
+.projects-filter-button:hover,
+.projects-filter-button:focus {
 	color: var(--color-text-white);
 	background-color: var(--color-select);
+}
+
+.projects-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	padding: 0;
+}
+
+.projects-list-item {
+	flex-basis: calc((100%-60px) / 4);
+	padding-bottom: 20px;
+	background: var(--background-all);
+	border: 1px solid var(--color-border-projects);
 }
 
 .projects-list-item-name {
@@ -312,6 +350,9 @@ header {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
+	padding: 0 24px;
+	margin-top: 20px;
+	margin-bottom: 6px;
 }
 
 .projects-list-item-type {
@@ -319,4 +360,5 @@ header {
 	line-height: 1.88;
 	letter-spacing: 0.03em;
 	color: var(--color-text-grey);
+	padding: 0 24px;
 }
